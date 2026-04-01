@@ -9,22 +9,28 @@
 </head>
 
 <body>
-    <!-- Start of the Header Section --> <!--DONE MARK-->
-    <header class="Yhanyhan-header">
-        <div class="header-container">
-            <div class="logo">Yhanyhan_LOGO</div>
-            <nav class="navigation">
-                <a href="#">Home</a>
-                <a href="#">Deals</a>
-                <a href="#">Products</a>
-                <a href="#">Reviews</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </nav>
-            <div class="search-btn">Search</div>
+    <!-- Start of Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="CSS/Yhanyhan_logo.png" />
+            <h2>YhanYhan's RTW Shop</h2>
         </div>
-    </header>
-    <!-- End of the Header Section -->
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search products..." />
+            <span class="material-symbols-outlined search-icon">Search</span>
+        </div>
+    </nav>
+    <!-- End of Navigation Bar -->
 
     <!-- Start of the Home Page Section --> <!--DONE MARK-->
     <section class="homepage-section">
@@ -46,140 +52,239 @@
     <!-- End of the Home Page Section -->
 
     <!-- START OF DEALS SECTION --> <!-- AXEL TASK -->
-    <section class="section">
-        <div class="deals-grid">
-            <div class="product-card">
-                <div class="placeholder-img" style="height: 150px;">IMG</div>
-                <h3>Item Name</h3>
-                <p>Price Info</p>
+    <section class="deal-section">
+        <div class="deals-text">
+            <h2>Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+
+        <div class="deal-main-container">
+            <div class="card">
+                <div class="image">IMG</div>
+                <h3>Heading 1</h3>
+                <p>Detail 1</p>
             </div>
-            <div class="product-card">
-                <div class="placeholder-img" style="height: 150px;">IMG</div>
-                <h3>Item Name</h3>
-                <p>Price Info</p>
+            <div class="card">
+                <div class="image">IMG</div>
+                <h3>Heading 2</h3>
+                <p>Detail 2</p>
             </div>
-            <div class="product-card">
-                <div class="placeholder-img" style="height: 150px;">IMG</div>
-                <h3>Item Name</h3>
-                <p>Price Info</p>
-            </div>
-            <div class="product-card">
-                <div class="placeholder-img" style="height: 150px;">IMG</div>
-                <h3>Item Name</h3>
-                <p>Price Info</p>
+            <div class="card">
+                <div class="image">IMG</div>
+                <h3>Heading 3</h3>
+                <p>Detail 3</p>
             </div>
         </div>
     </section>
     <!-- END OF DEALS SECTION -->
 
-    <!-- START OF REVIEWS SECTION --> <!-- REVAMONTE TASK -->
-    <section class="reviews-section">
-        <div class="reviews-container">
-            <h2>Customer Reviews</h2>
-            <div class="review-card">
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum, obcaecati temporibus reiciendis
-                    quaerat explicabo"</p>
-                <h4>- Reviewer Name</h4>
+    <!-- START OF PRODUCTS SECTION -->
+    <section class="products-section">
+        <div class="products-text">
+            <h2>Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+
+        <div class="products-main-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images.jpg" alt="Product 1">
+                </div>
+
+                <h3 class="product-name">Product 1</h3>
+                <div class="product-rating">☆☆☆☆☆ (#.#)</div>
+                <p class="product-price">Heading: ##</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <ul class="product-details">
+                    <li><strong>Heading 1:</strong> Detail 1</li>
+                    <li><strong>Heading 2:</strong> Detail 2</li>
+                    <li><strong>Heading 3:</strong> Detail 3</li>
+                    <li><strong>Heading 4:</strong> Detail 4</li>
+                </ul>
+                <button class="btn-add-cart">Add to Cart</button>
             </div>
-            <div class="review-card">
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum, obcaecati temporibus reiciendis
-                    quaerat explicabo"</p>
-                <h4>- Reviewer Name</h4>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images.jpg" alt="Product 2">
+                </div>
+
+                <h3 class="product-name">Product 2</h3>
+                <div class="product-rating">☆☆☆☆☆ (#.#)</div>
+                <p class="product-price">Heading: ##</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <ul class="product-details">
+                    <li><strong>Heading 1:</strong> Detail 1</li>
+                    <li><strong>Heading 2:</strong> Detail 2</li>
+                    <li><strong>Heading 3:</strong> Detail 3</li>
+                    <li><strong>Heading 4:</strong> Detail 4</li>
+                </ul>
+                <button class="btn-add-cart">Add to Cart</button>
             </div>
-            <div class="review-card">
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum, obcaecati temporibus reiciendis
-                    quaerat explicabo"</p>
-                <h4>- Reviewer Name</h4>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images.jpg" alt="Product 3">
+                </div>
+
+                <h3 class="product-name">Product 3</h3>
+                <div class="product-rating">☆☆☆☆☆ (#.#)</div>
+                <p class="product-price">Heading: ##</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <ul class="product-details">
+                    <li><strong>Heading 1:</strong> Detail 1</li>
+                    <li><strong>Heading 2:</strong> Detail 2</li>
+                    <li><strong>Heading 3:</strong> Detail 3</li>
+                    <li><strong>Heading 4:</strong> Detail 4</li>
+                </ul>
+                <button class="btn-add-cart">Add to Cart</button>
             </div>
         </div>
-        <!-- END OF REVIEWS SECTION -->
+    </section>
+    <!-- END OF PRODUCTS SECTION -->
 
-        <!-- START OF ABOUT, VISION, MISSIONS, GOALS SECTION --> <!-- RECANA TASK-->
-        <section class="about-section">
-            <div class="about-container">
-                <div class="about-text">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum, obcaecati temporibus
-                        reiciendis
-                        quaerat explicabo </p>
-                </div>
-            </div>
-            </div>
-        </section>
+    <!-- START OF REVIEWS SECTION --> <!-- REVAMONTE TASK -->
+    <div class="review-section">
+        <div class="text-container">
+            <h1>Heading</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro ipsam animi fugit?.</p>
+        </div>
 
-        <section class="vmgo-container">
-            <div class="vmgo-card">
-                <h4>VISION</h4>
-                <p>Layout block for vision text.</p>
+        <div class="firstbox-container">
+            <div class="firstmain-box">
+                <p>Content here</p>
             </div>
-            <div class="vmgo-card">
-                <h4>MISSION</h4>
-                <p>Layout block for mission text.</p>
-            </div>
-            <div class="vmgo-card">
-                <h4>GOALS</h4>
-                <ul class="goals-list">
-                    <li>Goal Item 1</li>
-                    <li>Goal Item 2</li>
-                </ul>
-            </div>
-        </section>
-        <!-- END OF VISION, MISSIONS, GOALS SECTION -->
+        </div>
 
-        <!-- START OF CTA ACTION SECTION --> <!--DONE MARK-->
-        <section class="cta">
-            <div class="main-container">
-                <h2>Call to Action Heading</h2><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum, obcaecati temporibus reiciendis
-                    quaerat explicabo </p>
-                <div class="main-buttons">
-                    <button class="btn-Call">Button 1</button>
-                    <button class="btn-WhatsApp">Button 2</button>
-                    <button class="btn-Email">Button 3</button> <br>
-                </div>
-                <p>Lorem ipsum dolor sit amet</p>
-            </div>
-        </section>
-        <!-- END OF CTA ACTION SECTION -->
-
-        <!-- START OF FOOTER SECTION --> <!--DONE MARK-->
-        <footer class="footer">
-            <div class="main-container1">
-                <div class="sub-container1">
-                    <h4>Heading1</h4>
-                    <p>Sub Heading</p>
-                    <p>Sub Heading</p>
-                </div>
-                <div class="sub-container2">
-                    <h4>Heading2</h4>
-                    <p>Sub Heading</p>
-                    <p>Sub Heading</p>
-                    <p>Sub Heading</p>
-                    <p>Sub Heading</p>
-                </div>
-                <div class="sub-container3">
-                    <h4>Heading3</h4>
-                    <p>Sub Heading</p>
-                    <p>Sub Heading</p>
-                    <p>Sub Heading</p>
-                    <p>Sub Heading</p>
-                </div>
-                <div class="sub-container4">
-                    <h4>Heading4</h4>
-                    <p>Sub Heading</p>
-                    <p>Sub Heading</p>
-                    <p>Sub Heading</p>
-                    <p>Sub Heading</p>
-                </div>
+        <div class="flexbox1-container">
+            <div class="box1">
+                <p class="customer-feedback1">Customer feedback</p>
+                <p>Reviewer Name</p>
             </div>
 
-
-            <div class="main-container2">
-                <div>© 2026 YhanYhan RTW Shop Copyright</div>
-                <div class="icons">ICONS</div>
+            <div class="box2">
+                <p>Customer feedback</p>
+                <p>Reviewer Name</p>
             </div>
-        </footer>
-        <!-- End of the Footer Section -->
+            <div class="box3">
+                <p>Customer feedback</p>
+                <p>Reviewer Name</p>
+            </div>
+        </div>
+
+        <div class="flexbox2-container">
+            <div class="box4">
+                <p>Customer feedback</p>
+                <p>Reviewer Name</p>
+            </div>
+            <div class="box5">
+                <p>Customer feedback</p>
+                <p>Reviewer Name</p>
+            </div>
+            <div class="box6">
+                <p>Customer feedback</p>
+                <p>Reviewer Name</p>
+            </div>
+        </div>
+
+        <div class="button-section">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro ipsam animi fugit?</p>
+            <button class="review-btn">Button 1</button>
+        </div>
+
+    </div>
+
+    <!-- END OF REVIEWS SECTION -->
+
+    <!-- START OF ABOUT, VISION, MISSIONS, GOALS SECTION --> <!-- RECANA TASK-->
+    <section class="about-section">
+        <div class="about-main-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum, obcaecati temporibus
+                    reiciendis quaerat explicabo </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="vmgo-container">
+        <div class="vmgo-card">
+            <h4>Content</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum, obcaecati temporibus reiciendis
+                quaerat explicabo </p>
+        </div>
+        <div class="vmgo-card">
+            <h4>CONTENT</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum, obcaecati temporibus reiciendis
+                quaerat explicabo </p>
+        </div>
+        <div class="vmgo-card">
+            <h4>CONTENT</h4>
+            <ul class="goals-list">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+            </ul>
+        </div>
+    </section>
+    <!-- END OF VISION, MISSIONS, GOALS SECTION -->
+
+    <!-- START OF CTA ACTION SECTION --> <!--DONE MARK-->
+    <section class="cta">
+        <div class="main-container">
+            <h2>Call to Action Heading</h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum, obcaecati temporibus reiciendis
+                quaerat explicabo </p>
+            <div class="main-buttons">
+                <button class="btn-Call">Button 1</button>
+                <button class="btn-WhatsApp">Button 2</button>
+                <button class="btn-Email">Button 3</button> <br>
+            </div>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+    </section>
+    <!-- END OF CTA ACTION SECTION -->
+
+    <!-- START OF FOOTER SECTION --> <!--DONE MARK-->
+    <footer class="footer">
+        <div class="main-container1">
+            <div class="sub-container1">
+                <h4>Heading1</h4>
+                <p>Sub Heading</p>
+                <p>Sub Heading</p>
+            </div>
+            <div class="sub-container2">
+                <h4>Heading2</h4>
+                <p>Sub Heading</p>
+                <p>Sub Heading</p>
+                <p>Sub Heading</p>
+                <p>Sub Heading</p>
+            </div>
+            <div class="sub-container3">
+                <h4>Heading3</h4>
+                <p>Sub Heading</p>
+                <p>Sub Heading</p>
+                <p>Sub Heading</p>
+                <p>Sub Heading</p>
+            </div>
+            <div class="sub-container4">
+                <h4>Heading4</h4>
+                <p>Sub Heading</p>
+                <p>Sub Heading</p>
+                <p>Sub Heading</p>
+                <p>Sub Heading</p>
+            </div>
+        </div>
+
+
+        <div class="main-container2">
+            <div>Lorem ipsum dolor sit amet</div>
+            <div class="icons">Lorem ipsum dolor</div>
+        </div>
+    </footer>
+    <!-- End of the Footer Section -->
 
 </body>
 
