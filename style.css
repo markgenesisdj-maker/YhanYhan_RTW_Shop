@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* END OF UNIVERSAL SELECTOR*/
 
 body {
@@ -395,12 +399,12 @@ nav {
 /* 1. The Grid Container */
 .grid-container {
   display: grid;
-  /* Creates 3 columns. Change 20rem to 18rem if they feel too wide */
-  grid-template-columns: repeat(3, 20rem);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  max-width: 80rem;
   gap: 2.5rem;
-  /* Space between boxes */
-  justify-content: center;
+  margin: 0 auto;    
   padding: 3rem 1rem;
+  width: 100%;          
 }
 
 /* 2. The Main Card */
@@ -418,7 +422,7 @@ nav {
 
 .grid-box:hover {
   transform: translateY(-8px);
-  /* Nice hover effect for your project */
+  
 }
 
 .second-container {
@@ -447,14 +451,19 @@ nav {
   position: relative;
   width: 100%;
   height: 18rem;
+  display: flex;
+  justify-content: center;
+   align-items: center;
   /* Controls how much space the photo takes */
 }
 
 .image-wrapper img {
-  width: 100%;
+ 
   height: 100%;
-  object-fit: cover;
-  /* Ensures photos don't look squashed */
+  width: 100%;
+  object-fit: contain;
+ 
+  
 }
 
 .tag {
@@ -473,7 +482,7 @@ nav {
 /* 4. The Pink Info Section */
 .product-info {
   background-color: #fce4ec;
-  /* Light Pink matching your photo */
+  
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -718,7 +727,7 @@ nav {
   max-width: 1285px;
   margin: 5px auto;
   padding: 0 20px;
-
+  overflow-x: hidden;
 }
 
 .history-container {
@@ -754,14 +763,16 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  min-width: 400px;
+  min-width: 0;
+   max-width: 100%; 
+  box-sizing: border-box;
 }
 
 .right-content div {
   background-color: #ffffff;
   border: 1.5px solid #ffb6c1;
   border-radius: 15px;
-  padding: 20px 60px;
+  padding: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -785,9 +796,10 @@ nav {
   flex-wrap: wrap;
   margin-top: 5rem;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 5rem;
+  gap: 1.5rem;
+  margin-top: 5rem; 
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .vision-card {
@@ -802,7 +814,7 @@ nav {
   justify-content: center;
   padding: 1.5rem;
   box-sizing: border-box;
-  margin-left: 2rem;
+  margin-left: 0;
 }
 
 .vision-card img {
@@ -843,7 +855,7 @@ nav {
   justify-content: center;
   padding: 1.5rem;
   box-sizing: border-box;
-  margin-left: 2rem;
+  margin-left: 0;
 }
 
 .mission-card img {
@@ -881,7 +893,7 @@ nav {
   justify-content: center;
   padding: 1.5rem;
   box-sizing: border-box;
-  margin-left: 2rem;
+  margin-left: 0;
 }
 
 .goals-card img {
@@ -909,12 +921,13 @@ nav {
 
 .vmgo-footer {
   margin-top: 5rem;
+  margin-bottom: 5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  
 }
 
 .check-content,
@@ -1149,3 +1162,42 @@ nav {
   padding: 60px 20px;
   width: 100%;
 }
+
+/* mobile */
+@media (max-width: 480px) {
+
+  .main-image img {
+   margin: 0 auto;
+  }
+
+  .vmgo-container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .right-content {
+    margin: 0 auto;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+  .main-image img {
+   margin: 0 auto;
+  }
+
+
+  .vmgo-container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .right-content {
+    margin: 0 auto;
+  }
+}
+
