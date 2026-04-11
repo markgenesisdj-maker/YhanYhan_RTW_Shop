@@ -46,7 +46,7 @@ nav{
 }
 
 .logo img{
-  width:50px;
+  width:80px;
 }
 
 .logo h2{
@@ -462,7 +462,7 @@ nav{
 /* 2. The Main Card */
 .grid-box {
   background-color: #fff;
-  border: 2px solid #ddd;
+  border: 1px solid #ddd;
   ;
   border-radius: 20px;
   overflow: hidden;
