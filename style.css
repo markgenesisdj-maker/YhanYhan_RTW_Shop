@@ -35,7 +35,7 @@ nav{
   padding:2px 5%;
   background:#f8f9fa;
   box-shadow:0 2px 8px rgba(0,0,0,0.08);
-  flex-wrap: nowrap; /* responsive */
+  flex-wrap: wrap; /* responsive */
 }
 
 .logo{
