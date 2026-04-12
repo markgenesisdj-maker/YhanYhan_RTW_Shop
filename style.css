@@ -184,6 +184,7 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   gap: 40px;
+  padding-top: 2rem;
 }
 
 .main-product {
@@ -256,6 +257,11 @@ nav {
   font-weight: bold;
   cursor: pointer;
   margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+.btn-Shop:hover {
+  transform: scale(0.95);
 }
 
 .btn-View {
@@ -265,6 +271,11 @@ nav {
   padding: 12px 25px;
   border-radius: 25px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-View:hover {
+  transform: scale(0.95);
 }
 
 .main-image {
@@ -286,11 +297,13 @@ nav {
   background: #FFC107;
   padding: 10px 20px;
   border-radius: 10px;
-  font-weight: bold;
+  font-size: 1rem;
 }
 
 #Discount {
-  font-weight: 100;
+  font-weight: bold;
+  font-size: 1.5rem;
+
 }
 
 /* END OF HOMEPAGE SECTION */
@@ -305,7 +318,7 @@ nav {
 }
 
 .deal-section {
-  padding: 60px 20px;
+  padding: 140px 20px;
   font-family: 'Arial', sans-serif;
 }
 
@@ -331,9 +344,21 @@ nav {
 }
 
 .deals-header h2 {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.deals-text h2 {
+  color: black;
+  margin-bottom: 5px;
+  font-size: 2.0rem;
   margin-top: 15px;
   font-weight: 800;
+}
+
+.deals-text p {
+  color: gray;
+  line-height: 1.7;
 }
 
 .deal-main-container {
@@ -438,7 +463,7 @@ nav {
 
 /* Products Section */
 .product-container {
-  padding: 60px 20px;
+  padding: 140px 20px;
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to right, #ffffff, #fff5f7);
 }
@@ -844,7 +869,7 @@ nav {
 
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   width: 100%;
   box-sizing: border-box;
@@ -1418,12 +1443,26 @@ nav {
 /* TABLET */
 @media (max-width: 768px) {
 
+
+  .promo-tag {
+    left: 0.1rem;
+  }
+
   .main-image img {
     margin: 0 auto;
   }
 
   .second-container p {
     font-size: 0.5rem;
+  }
+
+  .modal-card {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 0;
+    overflow-y: auto;
   }
 
   .reviews-grid {
@@ -1440,5 +1479,11 @@ nav {
 
   .right-content {
     margin: 0 auto;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
