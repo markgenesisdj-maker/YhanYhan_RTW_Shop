@@ -21,21 +21,21 @@ body {
 
 /*Start of Navigation*/
 nav{
-  position: fixed;     
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1000;
-  
-  display:flex;
-  justify-content:center;  
-  align-items:center;
-  gap:40px;
-   
-  padding:2px 5%;
-  background:#f8f9fa;
-  box-shadow:0 2px 8px rgba(0,0,0,0.08);
-  flex-wrap: wrap; /* responsive */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  padding: 15px 5%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
 }
 
 .logo{
@@ -1425,7 +1425,25 @@ nav{
   font-size: 0.9rem;
 }
 
+@media (max-width: 768px) {
+  .main-container1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
+@media (max-width: 480px) {
+  .main-container1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* END OF FOOTER SECTION */
+
+/* ALL SECTIONS PADDING AND WIDTH */
+.section {
+  padding: 60px 20px;
+  width: 100%;
+}
 
 /* mobile */
 @media (max-width: 480px) {
@@ -1503,7 +1521,11 @@ nav{
     margin: 0 auto;
   }
 
-
+.footer {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
 
 }
  
