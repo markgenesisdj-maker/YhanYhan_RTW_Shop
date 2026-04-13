@@ -19,7 +19,8 @@ body {
   padding-top: 80px;
 }
 
-/*Start of Navigation*/
+
+/* Start of Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -28,50 +29,55 @@ nav {
   z-index: 1000;
 
   display: flex;
-  justify-content: center;
+  /* Changed to space-between to spread items evenly */
+  justify-content: space-between; 
   align-items: center;
-  gap: 40px;
-
-  padding: 15px 5%;
+  
+  /* Reduced padding and gap for better fit on laptops */
+  padding: 10px 4%;
   background: #FFECEE;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
-  flex-wrap: wrap;
+  
+  /* Changed to nowrap to force everything on one line */
+  flex-wrap: nowrap; 
 }
 
 .logo {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
+  /* Removed flex-grow/justify-center to keep it left-aligned */
 }
 
 .logo img {
-  width: 80px;
+  width: 60px; /* Slightly smaller for better fit */
 }
 
 .logo h2 {
-  font-size: 23px;
+  font-size: 20px; /* Adjusted size */
   font-family: Helvetica, sans-serif;
   color: #333;
   white-space: nowrap;
-  padding-right: 50px;
-
+  /* Removed massive 50px padding that was pushing things away */
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 50px;
+  /* Reduced gap from 50px to 25px so it fits on 14" screens */
+  gap: 25px;
   justify-content: center;
   align-items: center;
+  margin: 0 15px; /* Added margin to separate from logo and search */
 }
 
 .nav-links a {
   text-decoration: none;
   color: #333;
-  font-size: 20px;
+  font-size: 16px; /* 20px is quite large for nav links, 16-18px is standard */
   font-family: Helvetica;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -81,8 +87,7 @@ nav {
 .search-box {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-left: 30px;
+  /* Removed large left padding */
 }
 
 .search-container-style {
@@ -99,7 +104,7 @@ nav {
   background: transparent;
   color: #fff;
   padding: 8px;
-  width: 160px;
+  width: 140px; /* Slightly narrower to save space */
 }
 
 .search-box input::placeholder {
@@ -110,70 +115,48 @@ nav {
   border: none;
   background: #fff;
   color: #E91E63;
-  padding: 8px 14px;
+  padding: 6px 12px;
   border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
 }
 
-@media(max-width:992px) {
-
+/* Tablet / Small Laptop Fix */
+@media(max-width:1024px) {
   nav {
-    gap: 20px;
-    padding: 12px 20px;
+    padding: 10px 2%;
   }
-
+  
+  .nav-links {
+    gap: 15px;
+  }
+  
   .logo h2 {
     font-size: 18px;
   }
-
-  .nav-links {
-    gap: 15px;
-  }
-
-  .nav-links a {
-    font-size: 14px;
-  }
-
-  .search-box input {
-    width: 120px;
-  }
 }
 
+/* Mobile Fix: Keeps it clean when screen is very narrow */
 @media(max-width:768px) {
-
   nav {
-    flex-direction: column;
-    gap: 15px;
+    flex-wrap: wrap; /* Allow wrapping only on mobile */
+    justify-content: center;
+    gap: 10px;
   }
 
   .nav-links {
-    flex-wrap: wrap;
-    gap: 12px;
+    order: 3; /* Puts links at the bottom */
+    width: 100%;
+    gap: 10px;
+    padding: 10px 0;
   }
 
   .logo h2 {
-    font-size: 17px;
-    text-align: center;
-  }
-
-  .search-box input {
-    width: 100px;
+    font-size: 16px;
   }
 }
 
-.navigation {
-  gap: 2rem;
-  display: flex;
-}
-
-.navigation a {
-  text-decoration: none;
-  color: #efd8d8;
-}
-
-/* END OF NAVIGATION */
-
+/* End of Navigation */
 
 /* START OF HOMEPAGE SECTION */
 
@@ -508,7 +491,7 @@ nav {
 .second-container p {
   font-family: Helvetica, sans-serif;
   color: gray;
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: 200;
   line-height: 1.6;
 }
@@ -1420,8 +1403,15 @@ nav {
     margin: 0 auto;
   }
 
-  .second-cntainer p {
-    font-size: 0.5rem;
+ 
+
+  .grid-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    
   }
 
   .reviews-grid {
@@ -1430,9 +1420,13 @@ nav {
     justify-content: center;
   }
 
+  
   .vmgo-container {
-    display: flex;
+
+   
     flex-direction: column;
+    align-items: center;
+
 
   }
 
@@ -1453,8 +1447,9 @@ nav {
     margin: 0 auto;
   }
 
-  .second-container p {
-    font-size: 0.5rem;
+  .grid-container {
+    margin: 0 auto;
+    width: 100%;
   }
 
   .modal-card {
@@ -1472,10 +1467,30 @@ nav {
     justify-content: center;
   }
 
-  .vmgo-container {
+  .aboutus-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 3rem;
+  }
 
+  /* 2. Target the History and Stats Boxes parent */
+  .vmgo-container {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* 3. Target the Vision/Mission/Goals cards parent */
+  .vmgocards-container {
+
+    flex-direction: column;
+   
+  }
+
+  .vision-card, .mission-card, .goals-card {
+   width: 100%;
   }
 
   .right-content {
