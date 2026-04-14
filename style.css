@@ -264,14 +264,23 @@ nav {
 
 .main-image {
   flex: 1;
+  min-width: 300px;
+  max-width: 450px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: relative;
 }
 
 .main-image img {
   border-radius: 20px;
-  width: 80%;
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.main-image:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.18);
 }
 
 .promo-tag {
@@ -282,6 +291,52 @@ nav {
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .main-product {
+    text-align: center;
+  }
+
+  .main-image {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .main-image img {
+    max-width: 360px;
+  }
+
+  .promo-tag {
+    left: 25px;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-product h1 {
+    font-size: 2.4rem;
+  }
+
+  .main-product p {
+    font-size: 18px;
+  }
+
+  .main-container {
+    margin: 60px 0;
+    padding: 0 1rem;
+  }
+
+  .main-image img {
+    max-width: 100%;
+    width: 90%;
+  }
 }
 
 #Discount {
