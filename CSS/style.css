@@ -48,7 +48,7 @@ nav {
 .logo h2 {
   font-size: 22px;
   font-family: sans-serif;
-  color: #E91E63;
+  color: #E27BA8;
   white-space: nowrap;
   font-weight: bolder;
 }
@@ -72,7 +72,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #E91E63;
+  color: #E27BA8;
 }
 
 .search-box {
@@ -83,7 +83,7 @@ nav {
 .search-container-style {
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #E91E63, #F06292);
+  background: linear-gradient(to right, #E27BA8, #F5B6D8);
   border-radius: 30px;
   padding: 5px 15px;
 }
@@ -104,7 +104,7 @@ nav {
 .search-btn-pink {
   border: none;
   background: #fff;
-  color: #E91E63;
+  color: #E27BA8;
   padding: 6px 12px;
   border-radius: 20px;
   cursor: pointer;
@@ -205,7 +205,7 @@ nav {
 }
 
 .badge {
-  background: #E92063;
+  background: #E27BA8;
   color: #fff;
   padding: 5px 12px;
   border-radius: 15px;
@@ -213,29 +213,34 @@ nav {
 }
 
 .main-product h1 {
-  font-size: 3rem;
-  margin: 20px 0;
-  line-height: 1.2;
+  font-size: 3.8rem;
+  margin: 30px 0;
+  line-height: 1.3;
   color: white;
+  font-weight: 700;
 }
 
 .main-product p {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: #e0e0e0;
   max-width: 450px;
-  font-size: 22px;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
 .btn-Shop {
-  background: #E91E63;
+  display: inline-block;
+  background: #E27BA8;
   color: white;
   border: none;
-  padding: 12px 25px;
+  padding: 15px 35px;
   border-radius: 25px;
   font-weight: bold;
   cursor: pointer;
-  margin-right: 15px;
+  margin-right: 20px;
   transition: all 0.3s ease;
+  font-size: 1.05rem;
+  text-decoration: none;
 }
 
 .btn-Shop:hover {
@@ -243,13 +248,15 @@ nav {
 }
 
 .btn-View {
+  display: inline-block;
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
-  padding: 12px 25px;
+  padding: 15px 35px;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 1.05rem;
 }
 
 .btn-View:hover {
@@ -440,8 +447,8 @@ nav {
 
 /* START OF DEALS SECTION */
 :root {
-  --primary-pink: #e91e63;
-  --light-pink: #fce4ec;
+  --primary-pink: #E27BA8;
+  --light-pink: #F5B6D8;
   --text-dark: #333;
   --text-gray: #777;
 }
@@ -479,17 +486,18 @@ nav {
 
 .deals-text h2 {
   color: black;
-  margin-bottom: 5px;
-  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-size: 2.8rem;
   font-weight: 800;
-
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
 }
 
 .deals-text p {
   color: gray;
-  line-height: 1.5;
-  font-size: 1.1rem;
-  padding-bottom: 10px;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  padding-bottom: 15px;
+  text-align: justify;
 }
 
 .deal-main-container {
@@ -540,6 +548,17 @@ nav {
   border-radius: 8px;
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+.deal-discount-badge {
+  display: inline-block;
+  background: var(--primary-pink);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 .card-content {
@@ -693,20 +712,22 @@ nav {
 }
 
 .title {
-  font-family: "Arial Black", sans-serif;
-  font-size: 1.1rem;
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
+  font-size: 1.35rem;
   color: #000;
   margin: 0;
+  font-weight: 700;
 }
 
 .stars {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #ffb400;
+  margin-top: 0.5rem;
 }
 
 .count {
   color: #888;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-left: 5px;
 }
 
@@ -714,13 +735,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 .price {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 900;
-  color: #e91e63;
+  color: #E27BA8;
   margin: 0;
   font-family: Verdana;
 }
@@ -728,13 +749,15 @@ nav {
 .tag {
   color: gray;
   font-family: Verdana;
+  font-size: 0.95rem;
 }
 
 .cart-btn {
-  background-color: #e91e63;
+  background-color: #E27BA8;
+  font-size: 0.95rem;
+  padding: 0.7rem 1.4rem;
   color: white;
   border: none;
-  padding: 0.6rem 1.2rem;
   border-radius: 50px;
   font-weight: bold;
   cursor: pointer;
@@ -813,41 +836,42 @@ nav {
 
 .modal-details {
   flex: 1.2;
-  padding: 30px 40px;
+  padding: 40px 50px;
   text-align: left;
   max-height: 85vh;
   overflow-y: auto;
 }
 
 .m-title {
-  font-family: Verdana;
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .m-price {
-  color: #e91e63;
-  font-size: 2rem;
+  color: #E27BA8;
+  font-size: 2.4rem;
   font-weight: 900;
-  margin: 5px 0;
+  margin: 10px 0 20px 0;
 }
 
 .m-divider {
   border: 0;
   border-top: 1px solid #eee;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .m-info-group {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 
 .m-info-group label {
   display: block;
   font-weight: bold;
-  font-size: 0.9rem;
-  margin-bottom: 3px;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
 }
 
 .m-info-group p {
@@ -880,7 +904,7 @@ nav {
 
 .m-btn {
   width: 100%;
-  background: #e91e63;
+  background: #E27BA8;
   color: white;
   border: none;
   padding: 15px;
@@ -1009,7 +1033,7 @@ nav {
 
 .bar-fill {
   height: 100%;
-  background: #e91e63;
+  background: #E27BA8;
   border-radius: 10px;
 }
 
@@ -1024,7 +1048,7 @@ nav {
 .review-card {
   border: 1.5px solid #ffcada;
   border-radius: 20px;
-  padding: 1.5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1034,32 +1058,36 @@ nav {
 
 .stars {
   color: #ffb400;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
 }
 
 .feedback {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: #333;
-  line-height: 1.5;
-  margin: 1rem 0;
+  line-height: 1.8;
+  margin: 1.2rem 0;
+  text-align: justify;
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
 }
 
 .customer-info-row {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-top: 1rem;
+  padding-top: 1.2rem;
   border-top: 1px solid #fff0f5;
+  margin-top: 0.8rem;
 }
 
 .name {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: bold;
   margin: 0;
 }
 
 .date-purchased {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #888;
   margin: 0;
 }
@@ -1080,7 +1108,7 @@ nav {
 }
 
 .review-btn {
-  background: #e91e63;
+  background: #E27BA8;
   color: #fff;
   border: none;
   padding: 1rem 3rem;
@@ -1116,6 +1144,54 @@ nav {
   margin: 3px auto;
   padding: 120px 20px 0px 20px;
   overflow-x: hidden;
+}
+
+.about-map-section {
+  width: 100%;
+  max-width: 1285px;
+  margin: 4.5rem auto 3rem;
+  padding: 0 20px;
+}
+
+.about-map-section h2 {
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.about-map-wrapper {
+  border: 2px solid rgba(226, 123, 168, 0.35);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-map-wrapper iframe {
+  width: 100%;
+  min-height: 420px;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .about-map-wrapper iframe {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vmgo-container {
+    flex-direction: column;
+  }
+
+  .right-content {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .about-map-section {
+    padding: 0 15px;
+  }
 }
 
 .history-container {
@@ -1338,21 +1414,23 @@ nav {
 .delivery-content h2,
 .heart-content h2,
 .star-content h2 {
-  font-family: verdana;
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .check-content p,
 .delivery-content p,
 .heart-content p,
 .star-content p {
-  font-family: verdana;
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
   color: gray;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   max-width: 17rem;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.7;
+  text-align: justify;
 }
 
 /*vgmo section end*/
@@ -1376,17 +1454,20 @@ nav {
 }
 
 .cta h2 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 800;
   margin: 0;
-  color: #E92063;
+  color: #E27BA8;
+  letter-spacing: -0.5px;
 }
 
 .cta .cta-description {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   max-width: 700px;
-  line-height: 1.4;
-  margin-bottom: 20px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  text-align: justify;
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
 }
 
 .cta .main-buttons {
@@ -1438,7 +1519,7 @@ nav {
 
 /* START OF FOOTER SECTION */
 .footer {
-  background: #E92063;
+  background: #E27BA8;
   padding: 60px 20px 30px;
   color: #ffffff;
   font-family: sans-serif;
@@ -1468,16 +1549,20 @@ nav {
 }
 
 .footer .description {
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 1.05rem;
+  line-height: 1.8;
   color: #cccccc;
   max-width: 250px;
+  text-align: justify;
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
 }
 
 .footer h4 {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
   color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .footer ul {
@@ -1486,14 +1571,15 @@ nav {
 }
 
 .footer ul li {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .footer ul li a {
   color: #cccccc;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1rem;
   transition: color 0.3s;
+  line-height: 1.7;
 }
 
 .footer ul li a:hover {
@@ -1504,10 +1590,11 @@ nav {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   color: #cccccc;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
 }
 
 .contact-item i {
@@ -1516,7 +1603,7 @@ nav {
 }
 
 .contact-emoji {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   min-width: 25px;
   display: inline-block;
   text-align: center;
@@ -1533,7 +1620,8 @@ nav {
 
 .copyright {
   color: #cccccceb;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
 }
 
 @media (max-width: 768px) {
