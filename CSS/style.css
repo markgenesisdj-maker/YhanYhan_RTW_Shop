@@ -187,6 +187,7 @@ nav {
 
 .homepage-section {
   padding: 0px 10%;
+  background: linear-gradient(to right, #ffffff, #fff5f7);
   position: relative;
   height: calc(100vh - 80px);
 }
